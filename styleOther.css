@@ -662,8 +662,24 @@ h1, h2, h3, h4 {
   display: none;
 }
 
+.tabRoutes_content .project_promo {
+  grid-area: 1/1/-1/-1;
+  background: var(--card-background);
+  padding: 1.5rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 10px var(--shadow-color);
+  box-shadow: 0 4px 10px var(--shadow-color);
+}
+
 .tabRoutes_content_active {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1rem;
+}
+.tabRoutes_content .project_item_description {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
 }
